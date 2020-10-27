@@ -33,7 +33,7 @@ fx, fy, & fxy is placed the same way as f
 
 Note: x & y needs to be sorted in ascending order. Make sure your f values will swap indices when sorting as well 
 
-<img src="testing/data_layout.png">
+<img src="testing/data_layout.png" width="600px">
 
 build the bicubic struct from the data
 ```rust
