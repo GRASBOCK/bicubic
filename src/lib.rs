@@ -1,5 +1,21 @@
 mod patch;
 /// contains all necessary information to sample arbitrary points
+///
+/// # Example
+///
+/// ```
+/// let x = vec![0.0, 6.0];
+/// let y = vec![0.0, 5.0];
+/// let (f, fx, fy, fxy) = (vec![0.0; 4], vec![0.0; 4], vec![0.0; 4], vec![0.0; 4]);
+/// let bci = bicubic::from_vec(&x, &y, &f, &fx, &fy, &fxy);
+/// let z = bci.sample(5.6, 3.5);
+///  ``` 
+///
+/// # Panics
+///
+/// [`panic!`] when one of the f vectors has bad dimensions
+///
+/// [`panic!`]: https://doc.rust-lang.org/std/macro.panic.html
 pub struct Bicubic{
 	x: Vec<f64>, 
 	y: Vec<f64>,
@@ -66,10 +82,11 @@ impl Bicubic{
 	}
 }
 
-///takes multiple datavectors and creates a bicubic Interpolation from them
+/// takes multiple datavectors and creates a bicubic Interpolation from them
 ///
-///f needs to be in rowwise order and sorted from bottom-left to top-right
-
+/// x & y need to be sorted in ascending order
+///
+/// f needs to be in rowwise order and sorted from bottom-left to top-right 
 pub fn from_vec(
 	x: &Vec<f64>, 
 	y: &Vec<f64>,
