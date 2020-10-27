@@ -41,6 +41,6 @@ let bci = bicubic::from_vec(&x, &y, &f, &fx, &fy, &fxy);
 ``` 
 To sample do this:
 ```rust
-let z = bicubic.sample(x, y);
+let z = bci.sample(x, y);
 ```
 <img src="testing/is_zero.png">
