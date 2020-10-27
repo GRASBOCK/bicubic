@@ -28,6 +28,13 @@ let fy = vec![0.0; f.len()];
 // cross derivative (untested)
 let fxy = vec![0.0; f.len()];
 ```
+The following image shows the layout of the data. 
+fx, fy, & fxy is placed the same way as f
+
+Note: x & y needs to be sorted in ascending order. Make sure your f values will swap indices when sorting as well 
+
+<img src="testing/data_layout.png">
+
 build the bicubic struct from the data
 ```rust
 let bci = bicubic::from_vec(&x, &y, &f, &fx, &fy, &fxy);
