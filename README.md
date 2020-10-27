@@ -31,9 +31,9 @@ let fxy = vec![0.0; f.len()];
 The following image shows the layout of the data. 
 fx, fy, & fxy is placed the same way as f
 
-Note: x & y needs to be sorted in ascending order. Make sure your f values will swap indices when sorting as well 
-
 <img src="testing/data_layout.png" width="600px">
+
+*Note: x & y needs to be sorted in ascending order. Make sure your f values will swap indices when sorting as well*
 
 build the bicubic struct from the data
 ```rust
