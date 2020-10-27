@@ -2,7 +2,7 @@
 A base for bicubic interpolation
 
 This projects provides the basis for bicubic interpolation. It is meant to allow any kind of interpolation. <br>
-If you need something ready to use check out the [makima_spline](https://crates.io/crates/makima_spline)
+If you need something ready to use check out the [makima_spline::n_dimensional](https://crates.io/crates/makima_spline)
 
 <img src="testing/thumbnail.png">
 
