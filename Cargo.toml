@@ -1,11 +1,11 @@
 [package]
 name = "bicubic"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Richard <grasbock@gmail.com>"]
 edition = "2018"
 license = "MIT"
 description = "A base for bicubic interpolation"
-repository = "https://github.com/GRASBOCK/makima_spline"
+repository = "https://github.com/GRASBOCK/bicubic"
 keywords = ["bicubic", "interpolation"]
 categories = ["mathematics", "science"]
 exclude = ["testing"]
